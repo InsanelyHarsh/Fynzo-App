@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		572343C826E7353300161CDF /* FAQsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343C726E7353300161CDF /* FAQsView.swift */; };
+		572343CA26E7398500161CDF /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343C926E7398500161CDF /* ContactUsView.swift */; };
+		572343CC26E755CA00161CDF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343CB26E755CA00161CDF /* SettingsView.swift */; };
+		572343CE26E755D400161CDF /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343CD26E755D400161CDF /* ChatView.swift */; };
+		572343D026E7A08500161CDF /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343CF26E7A08500161CDF /* TemplatesView.swift */; };
+		572343D326E7C2F300161CDF /* LoginPreviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343D226E7C2F300161CDF /* LoginPreviewModifier.swift */; };
+		572343D626E8642700161CDF /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343D526E8642700161CDF /* GetData.swift */; };
+		572343EA26E8EB8900161CDF /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343E926E8EB8900161CDF /* SignView.swift */; };
+		572343ED26E8EBC800161CDF /* EmailInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343EC26E8EBC800161CDF /* EmailInputView.swift */; };
+		572343EF26E8EC8000161CDF /* InputPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343EE26E8EC8000161CDF /* InputPassView.swift */; };
+		572343F126E8EDF200161CDF /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343F026E8EDF200161CDF /* UserDetailsView.swift */; };
+		572343F326E9592A00161CDF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343F226E9592A00161CDF /* LoginView.swift */; };
+		572343F526E95D7A00161CDF /* DemoSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343F426E95D7A00161CDF /* DemoSurveyView.swift */; };
+		572343F726E95F8E00161CDF /* DemoBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343F626E95F8E00161CDF /* DemoBaseView.swift */; };
+		572343FA26E9632B00161CDF /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572343F926E9632B00161CDF /* FirstView.swift */; };
+		5723440126E9C75100161CDF /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723440026E9C75100161CDF /* LoginResponseModel.swift */; };
+		5723440326E9C7F900161CDF /* LoginPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723440226E9C7F900161CDF /* LoginPostModel.swift */; };
+		5723440626E9CD6B00161CDF /* LoginviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723440526E9CD6B00161CDF /* LoginviewModel.swift */; };
+		5723440926EA2B7300161CDF /* SocialLoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723440826EA2B7300161CDF /* SocialLoginResponseModel.swift */; };
+		5723440B26EA2B8900161CDF /* SocialLoginPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723440A26EA2B8900161CDF /* SocialLoginPostModel.swift */; };
+		5723442726F1990F00161CDF /* UserLoginDetailsCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723442626F1990F00161CDF /* UserLoginDetailsCDManager.swift */; };
+		5723442A26F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5723442826F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodeld */; };
+		5724403C270AEB1C0016872D /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5724403B270AEB1C0016872D /* OrientationView.swift */; };
+		572F620D2708A576006C6FF5 /* TestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572F620C2708A576006C6FF5 /* TestingView.swift */; };
+		57306FA226FA44BB00CA03C9 /* SignUPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FA126FA44BB00CA03C9 /* SignUPViewModel.swift */; };
+		57306FAD26FB324400CA03C9 /* SurveyCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FAC26FB324400CA03C9 /* SurveyCDManager.swift */; };
+		57306FAF26FB439E00CA03C9 /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FAE26FB439E00CA03C9 /* SurveyViewModel.swift */; };
+		57306FDF26FDE56400CA03C9 /* <<addsurvey>>.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FDE26FDE56400CA03C9 /* <<addsurvey>>.swift */; };
+		57306FE126FDE5EA00CA03C9 /* ADDsurveyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FE026FDE5EA00CA03C9 /* ADDsurveyLogic.swift */; };
+		57306FE426FDFE2500CA03C9 /* SurveyListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FE326FDFE2500CA03C9 /* SurveyListModel.swift */; };
+		57306FE9270015E200CA03C9 /* SmileyFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FE8270015E200CA03C9 /* SmileyFaceView.swift */; };
+		57306FEB270027A200CA03C9 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FEA270027A200CA03C9 /* RatingView.swift */; };
+		57306FED27002A1600CA03C9 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FEC27002A1600CA03C9 /* ScaleView.swift */; };
+		57306FEF27002CAB00CA03C9 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FEE27002CAB00CA03C9 /* CheckBoxView.swift */; };
+		57306FF127002CDB00CA03C9 /* LongTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FF027002CDB00CA03C9 /* LongTextView.swift */; };
+		57306FF327003FCF00CA03C9 /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FF227003FCF00CA03C9 /* CheckListView.swift */; };
+		57306FF52700411600CA03C9 /* StatementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FF42700411600CA03C9 /* StatementView.swift */; };
+		57306FF72700439000CA03C9 /* StateMentQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FF62700439000CA03C9 /* StateMentQuestionView.swift */; };
+		57306FFB2700AAC400CA03C9 /* Get SurveyFormListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FFA2700AAC400CA03C9 /* Get SurveyFormListings.swift */; };
+		57306FFE2700AAEB00CA03C9 /* PostSurveyformListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FFD2700AAEB00CA03C9 /* PostSurveyformListingModel.swift */; };
+		573070002700AB8800CA03C9 /* ResponseSurveyFormListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57306FFF2700AB8800CA03C9 /* ResponseSurveyFormListing.swift */; };
+		573070032700BA1F00CA03C9 /* surveyFormListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573070022700BA1F00CA03C9 /* surveyFormListingViewModel.swift */; };
+		573070062700C2CB00CA03C9 /* PostSurveyFormDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573070052700C2CB00CA03C9 /* PostSurveyFormDetailModel.swift */; };
+		573070082700C30E00CA03C9 /* ResponseSuveyFormDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573070072700C30E00CA03C9 /* ResponseSuveyFormDetailModel.swift */; };
+		5730700B270188D300CA03C9 /* CDSurveyFormListings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57307009270188D300CA03C9 /* CDSurveyFormListings.xcdatamodeld */; };
+		5730700D270189AE00CA03C9 /* SuveyFormListingCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730700C270189AE00CA03C9 /* SuveyFormListingCDManager.swift */; };
+		57307010270226DA00CA03C9 /* Get SurveyFormDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730700F270226DA00CA03C9 /* Get SurveyFormDetails.swift */; };
+		57307014270228EA00CA03C9 /* SurveyFormDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57307013270228EA00CA03C9 /* SurveyFormDetailsViewModel.swift */; };
+		5730701627022E4A00CA03C9 /* DetailsForSurveyQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730701527022E4A00CA03C9 /* DetailsForSurveyQuestions.swift */; };
+		5730701B2702CF9900CA03C9 /* SurveyFormDetailsCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730701A2702CF9900CA03C9 /* SurveyFormDetailsCDManager.swift */; };
+		5730701E2703175E00CA03C9 /* CheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730701D2703175E00CA03C9 /* CheckResponse.swift */; };
+		573070202703177700CA03C9 /* Non-ArrayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730701F2703177700CA03C9 /* Non-ArrayModel.swift */; };
+		57307022270320C500CA03C9 /* response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57307021270320C500CA03C9 /* response.swift */; };
+		57417EFD274CCF8900CD7CC6 /* SurveyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57417EFC274CCF8900CD7CC6 /* SurveyLogic.swift */; };
+		57453D082707551E00A8B176 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57453D072707551E00A8B176 /* DemoView.swift */; };
+		5755C30626E4E5FD00E8A6CD /* FynzoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C30526E4E5FD00E8A6CD /* FynzoAppApp.swift */; };
+		5755C30826E4E5FD00E8A6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C30726E4E5FD00E8A6CD /* ContentView.swift */; };
+		5755C30A26E4E5FE00E8A6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5755C30926E4E5FE00E8A6CD /* Assets.xcassets */; };
+		5755C30D26E4E5FE00E8A6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5755C30C26E4E5FE00E8A6CD /* Preview Assets.xcassets */; };
+		5755C31B26E5EE1D00E8A6CD /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C31A26E5EE1D00E8A6CD /* MenuView.swift */; };
+		5755C31E26E5EE8100E8A6CD /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C31D26E5EE8100E8A6CD /* UserDetailView.swift */; };
+		5755C32026E5EE9700E8A6CD /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C31F26E5EE9700E8A6CD /* OptionView.swift */; };
+		5755C32226E5FC5000E8A6CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C32126E5FC5000E8A6CD /* HomeView.swift */; };
+		5755C32426E6340F00E8A6CD /* FeedBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C32326E6340F00E8A6CD /* FeedBackView.swift */; };
+		5755C32626E6446F00E8A6CD /* BottomPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C32526E6446F00E8A6CD /* BottomPartView.swift */; };
+		5755C32826E686CF00E8A6CD /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5755C32726E686CF00E8A6CD /* AddButtonView.swift */; };
+		575B46A9272553A200CCDE31 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B46A8272553A200CCDE31 /* StaticData.swift */; };
+		576A7543275370A500A9594C /* Demo02ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A7542275370A500A9594C /* Demo02ViewModel.swift */; };
+		576A754527537A6F00A9594C /* Demo02View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A754427537A6F00A9594C /* Demo02View.swift */; };
+		57879F8A2704CFCD00D57DE2 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57879F892704CFCD00D57DE2 /* DropDownView.swift */; };
+		57879FAB27054FEA00D57DE2 /* SurveyStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57879FAA27054FEA00D57DE2 /* SurveyStatement.swift */; };
+		57879FAD270574AD00D57DE2 /* RadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57879FAC270574AD00D57DE2 /* RadioButtonView.swift */; };
+		578A20D8274905200098B724 /* NextStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578A20D7274905200098B724 /* NextStep.swift */; };
+		579054E426F38AAE008D03EA /* SurveyOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579054E326F38AAE008D03EA /* SurveyOptionView.swift */; };
+		579054EA26F483A4008D03EA /* SignUpPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579054E926F483A4008D03EA /* SignUpPostModel.swift */; };
+		579054EC26F483BA008D03EA /* SignUPResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579054EB26F483BA008D03EA /* SignUPResponseModel.swift */; };
+		57AB4BDA2717FC3C001D4AA8 /* MyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB4BD92717FC3C001D4AA8 /* MyCode.swift */; };
+		57B6040826F22E4200C6E115 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6040726F22E4200C6E115 /* SettingRowView.swift */; };
+		57B6040A26F30B4900C6E115 /* introPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6040926F30B4900C6E115 /* introPageView.swift */; };
+		57B6040D26F322FD00C6E115 /* SocialLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6040C26F322FD00C6E115 /* SocialLoginViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		572343C726E7353300161CDF /* FAQsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQsView.swift; sourceTree = "<group>"; };
+		572343C926E7398500161CDF /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		572343CB26E755CA00161CDF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		572343CD26E755D400161CDF /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		572343CF26E7A08500161CDF /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
+		572343D226E7C2F300161CDF /* LoginPreviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPreviewModifier.swift; sourceTree = "<group>"; };
+		572343D526E8642700161CDF /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		572343E926E8EB8900161CDF /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		572343EC26E8EBC800161CDF /* EmailInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputView.swift; sourceTree = "<group>"; };
+		572343EE26E8EC8000161CDF /* InputPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPassView.swift; sourceTree = "<group>"; };
+		572343F026E8EDF200161CDF /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		572343F226E9592A00161CDF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		572343F426E95D7A00161CDF /* DemoSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSurveyView.swift; sourceTree = "<group>"; };
+		572343F626E95F8E00161CDF /* DemoBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBaseView.swift; sourceTree = "<group>"; };
+		572343F926E9632B00161CDF /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		5723440026E9C75100161CDF /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		5723440226E9C7F900161CDF /* LoginPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPostModel.swift; sourceTree = "<group>"; };
+		5723440526E9CD6B00161CDF /* LoginviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginviewModel.swift; sourceTree = "<group>"; };
+		5723440826EA2B7300161CDF /* SocialLoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginResponseModel.swift; sourceTree = "<group>"; };
+		5723440A26EA2B8900161CDF /* SocialLoginPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginPostModel.swift; sourceTree = "<group>"; };
+		5723442626F1990F00161CDF /* UserLoginDetailsCDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginDetailsCDManager.swift; sourceTree = "<group>"; };
+		5723442926F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDUserLOGINDetails.xcdatamodel; sourceTree = "<group>"; };
+		5724403B270AEB1C0016872D /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		572F620C2708A576006C6FF5 /* TestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingView.swift; sourceTree = "<group>"; };
+		57306FA126FA44BB00CA03C9 /* SignUPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUPViewModel.swift; sourceTree = "<group>"; };
+		57306FAC26FB324400CA03C9 /* SurveyCDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCDManager.swift; sourceTree = "<group>"; };
+		57306FAE26FB439E00CA03C9 /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		57306FDE26FDE56400CA03C9 /* <<addsurvey>>.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "<<addsurvey>>.swift"; sourceTree = "<group>"; };
+		57306FE026FDE5EA00CA03C9 /* ADDsurveyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADDsurveyLogic.swift; sourceTree = "<group>"; };
+		57306FE326FDFE2500CA03C9 /* SurveyListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListModel.swift; sourceTree = "<group>"; };
+		57306FE8270015E200CA03C9 /* SmileyFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileyFaceView.swift; sourceTree = "<group>"; };
+		57306FEA270027A200CA03C9 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		57306FEC27002A1600CA03C9 /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
+		57306FEE27002CAB00CA03C9 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		57306FF027002CDB00CA03C9 /* LongTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTextView.swift; sourceTree = "<group>"; };
+		57306FF227003FCF00CA03C9 /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
+		57306FF42700411600CA03C9 /* StatementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementView.swift; sourceTree = "<group>"; };
+		57306FF62700439000CA03C9 /* StateMentQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMentQuestionView.swift; sourceTree = "<group>"; };
+		57306FFA2700AAC400CA03C9 /* Get SurveyFormListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get SurveyFormListings.swift"; sourceTree = "<group>"; };
+		57306FFD2700AAEB00CA03C9 /* PostSurveyformListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSurveyformListingModel.swift; sourceTree = "<group>"; };
+		57306FFF2700AB8800CA03C9 /* ResponseSurveyFormListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSurveyFormListing.swift; sourceTree = "<group>"; };
+		573070022700BA1F00CA03C9 /* surveyFormListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = surveyFormListingViewModel.swift; sourceTree = "<group>"; };
+		573070052700C2CB00CA03C9 /* PostSurveyFormDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSurveyFormDetailModel.swift; sourceTree = "<group>"; };
+		573070072700C30E00CA03C9 /* ResponseSuveyFormDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSuveyFormDetailModel.swift; sourceTree = "<group>"; };
+		5730700A270188D300CA03C9 /* CDSurveyFormListings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDSurveyFormListings.xcdatamodel; sourceTree = "<group>"; };
+		5730700C270189AE00CA03C9 /* SuveyFormListingCDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuveyFormListingCDManager.swift; sourceTree = "<group>"; };
+		5730700F270226DA00CA03C9 /* Get SurveyFormDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get SurveyFormDetails.swift"; sourceTree = "<group>"; };
+		57307013270228EA00CA03C9 /* SurveyFormDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFormDetailsViewModel.swift; sourceTree = "<group>"; };
+		5730701527022E4A00CA03C9 /* DetailsForSurveyQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsForSurveyQuestions.swift; sourceTree = "<group>"; };
+		5730701A2702CF9900CA03C9 /* SurveyFormDetailsCDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyFormDetailsCDManager.swift; sourceTree = "<group>"; };
+		5730701D2703175E00CA03C9 /* CheckResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResponse.swift; sourceTree = "<group>"; };
+		5730701F2703177700CA03C9 /* Non-ArrayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Non-ArrayModel.swift"; sourceTree = "<group>"; };
+		57307021270320C500CA03C9 /* response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = response.swift; sourceTree = "<group>"; };
+		57417EFC274CCF8900CD7CC6 /* SurveyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyLogic.swift; sourceTree = "<group>"; };
+		57453D072707551E00A8B176 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		5755C30226E4E5FD00E8A6CD /* FynzoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FynzoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5755C30526E4E5FD00E8A6CD /* FynzoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FynzoAppApp.swift; sourceTree = "<group>"; };
+		5755C30726E4E5FD00E8A6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5755C30926E4E5FE00E8A6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5755C30C26E4E5FE00E8A6CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5755C30E26E4E5FE00E8A6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5755C31A26E5EE1D00E8A6CD /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5755C31D26E5EE8100E8A6CD /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		5755C31F26E5EE9700E8A6CD /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		5755C32126E5FC5000E8A6CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5755C32326E6340F00E8A6CD /* FeedBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackView.swift; sourceTree = "<group>"; };
+		5755C32526E6446F00E8A6CD /* BottomPartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPartView.swift; sourceTree = "<group>"; };
+		5755C32726E686CF00E8A6CD /* AddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
+		575B46A8272553A200CCDE31 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		576A7542275370A500A9594C /* Demo02ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo02ViewModel.swift; sourceTree = "<group>"; };
+		576A754427537A6F00A9594C /* Demo02View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo02View.swift; sourceTree = "<group>"; };
+		57879F892704CFCD00D57DE2 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		57879FAA27054FEA00D57DE2 /* SurveyStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStatement.swift; sourceTree = "<group>"; };
+		57879FAC270574AD00D57DE2 /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
+		578A20D7274905200098B724 /* NextStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextStep.swift; sourceTree = "<group>"; };
+		579054E326F38AAE008D03EA /* SurveyOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyOptionView.swift; sourceTree = "<group>"; };
+		579054E926F483A4008D03EA /* SignUpPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPostModel.swift; sourceTree = "<group>"; };
+		579054EB26F483BA008D03EA /* SignUPResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPResponseModel.swift; sourceTree = "<group>"; };
+		57AB4BD92717FC3C001D4AA8 /* MyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCode.swift; sourceTree = "<group>"; };
+		57B6040726F22E4200C6E115 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		57B6040926F30B4900C6E115 /* introPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introPageView.swift; sourceTree = "<group>"; };
+		57B6040C26F322FD00C6E115 /* SocialLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5755C2FF26E4E5FD00E8A6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		572343D126E7C2CB00161CDF /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				572343D226E7C2F300161CDF /* LoginPreviewModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		572343D426E8640C00161CDF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				572343D526E8642700161CDF /* GetData.swift */,
+				57306FFA2700AAC400CA03C9 /* Get SurveyFormListings.swift */,
+				5730700F270226DA00CA03C9 /* Get SurveyFormDetails.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		572343E426E8EA4700161CDF /* Login Views */ = {
+			isa = PBXGroup;
+			children = (
+				572343E826E8EB2100161CDF /* Create New Account */,
+				572343E726E8EB1500161CDF /* Log IN */,
+				572343E626E8EB0400161CDF /* Demo Surveys */,
+				572343E526E8EAF800161CDF /* FirstView */,
+				572F620C2708A576006C6FF5 /* TestingView.swift */,
+			);
+			path = "Login Views";
+			sourceTree = "<group>";
+		};
+		572343E526E8EAF800161CDF /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		572343E626E8EB0400161CDF /* Demo Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				572343F426E95D7A00161CDF /* DemoSurveyView.swift */,
+				572343F626E95F8E00161CDF /* DemoBaseView.swift */,
+			);
+			path = "Demo Surveys";
+			sourceTree = "<group>";
+		};
+		572343E726E8EB1500161CDF /* Log IN */ = {
+			isa = PBXGroup;
+			children = (
+				572343F226E9592A00161CDF /* LoginView.swift */,
+			);
+			path = "Log IN";
+			sourceTree = "<group>";
+		};
+		572343E826E8EB2100161CDF /* Create New Account */ = {
+			isa = PBXGroup;
+			children = (
+				572343E926E8EB8900161CDF /* SignView.swift */,
+			);
+			path = "Create New Account";
+			sourceTree = "<group>";
+		};
+		572343EB26E8EBAC00161CDF /* LoginBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				572343EC26E8EBC800161CDF /* EmailInputView.swift */,
+				572343EE26E8EC8000161CDF /* InputPassView.swift */,
+				572343F026E8EDF200161CDF /* UserDetailsView.swift */,
+			);
+			path = LoginBaseView;
+			sourceTree = "<group>";
+		};
+		572343F826E9631B00161CDF /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				572343F926E9632B00161CDF /* FirstView.swift */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		572343FF26E9C73D00161CDF /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				5723440026E9C75100161CDF /* LoginResponseModel.swift */,
+				5723440226E9C7F900161CDF /* LoginPostModel.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		5723440426E9CD4C00161CDF /* LoginviewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5723440526E9CD6B00161CDF /* LoginviewModel.swift */,
+			);
+			path = LoginviewModel;
+			sourceTree = "<group>";
+		};
+		5723440726EA2B4F00161CDF /* SocialLoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				5723440826EA2B7300161CDF /* SocialLoginResponseModel.swift */,
+				5723440A26EA2B8900161CDF /* SocialLoginPostModel.swift */,
+			);
+			path = SocialLoginModel;
+			sourceTree = "<group>";
+		};
+		5723442526F198FE00161CDF /* CoreData Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5723442626F1990F00161CDF /* UserLoginDetailsCDManager.swift */,
+				57306FAC26FB324400CA03C9 /* SurveyCDManager.swift */,
+				5730700C270189AE00CA03C9 /* SuveyFormListingCDManager.swift */,
+				5730701A2702CF9900CA03C9 /* SurveyFormDetailsCDManager.swift */,
+			);
+			path = "CoreData Managers";
+			sourceTree = "<group>";
+		};
+		57306FA926FB317900CA03C9 /* SignUPViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57306FA126FA44BB00CA03C9 /* SignUPViewModel.swift */,
+			);
+			path = SignUPViewModel;
+			sourceTree = "<group>";
+		};
+		57306FAA26FB318D00CA03C9 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				57307011270228BD00CA03C9 /* SurveyFormDetailsViewModel */,
+				573070012700B9FD00CA03C9 /* SurveyFormListingViewModel */,
+				57306FE226FDFE1000CA03C9 /* SurveyViewModel */,
+				5723440426E9CD4C00161CDF /* LoginviewModel */,
+				57306FA926FB317900CA03C9 /* SignUPViewModel */,
+				57B6040B26F3219B00C6E115 /* SocialLoginViewModel */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		57306FAB26FB31D500CA03C9 /* CoreData Files */ = {
+			isa = PBXGroup;
+			children = (
+				5723442826F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodeld */,
+				57307009270188D300CA03C9 /* CDSurveyFormListings.xcdatamodeld */,
+			);
+			path = "CoreData Files";
+			sourceTree = "<group>";
+		};
+		57306FDD26FDE54B00CA03C9 /* AddSurveyView<<<>>> */ = {
+			isa = PBXGroup;
+			children = (
+				57306FDE26FDE56400CA03C9 /* <<addsurvey>>.swift */,
+				57306FE026FDE5EA00CA03C9 /* ADDsurveyLogic.swift */,
+			);
+			path = "AddSurveyView<<<>>>";
+			sourceTree = "<group>";
+		};
+		57306FE226FDFE1000CA03C9 /* SurveyViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57306FAE26FB439E00CA03C9 /* SurveyViewModel.swift */,
+				57306FE326FDFE2500CA03C9 /* SurveyListModel.swift */,
+			);
+			path = SurveyViewModel;
+			sourceTree = "<group>";
+		};
+		57306FE52700156100CA03C9 /* SurveyViews */ = {
+			isa = PBXGroup;
+			children = (
+				57306FE8270015E200CA03C9 /* SmileyFaceView.swift */,
+				57306FEA270027A200CA03C9 /* RatingView.swift */,
+				57306FEC27002A1600CA03C9 /* ScaleView.swift */,
+				57306FEE27002CAB00CA03C9 /* CheckBoxView.swift */,
+				57306FF027002CDB00CA03C9 /* LongTextView.swift */,
+				57306FF227003FCF00CA03C9 /* CheckListView.swift */,
+				57306FF42700411600CA03C9 /* StatementView.swift */,
+				57306FF62700439000CA03C9 /* StateMentQuestionView.swift */,
+				57879F892704CFCD00D57DE2 /* DropDownView.swift */,
+				57879FAA27054FEA00D57DE2 /* SurveyStatement.swift */,
+				57879FAC270574AD00D57DE2 /* RadioButtonView.swift */,
+			);
+			path = SurveyViews;
+			sourceTree = "<group>";
+		};
+		57306FFC2700AACB00CA03C9 /* SurveyFormListingsModel */ = {
+			isa = PBXGroup;
+			children = (
+				57306FFD2700AAEB00CA03C9 /* PostSurveyformListingModel.swift */,
+				57306FFF2700AB8800CA03C9 /* ResponseSurveyFormListing.swift */,
+			);
+			path = SurveyFormListingsModel;
+			sourceTree = "<group>";
+		};
+		573070012700B9FD00CA03C9 /* SurveyFormListingViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				573070022700BA1F00CA03C9 /* surveyFormListingViewModel.swift */,
+			);
+			path = SurveyFormListingViewModel;
+			sourceTree = "<group>";
+		};
+		573070042700C2AA00CA03C9 /* SurveyFormDetailsModel */ = {
+			isa = PBXGroup;
+			children = (
+				5730701C2703174B00CA03C9 /* Response */,
+				573070052700C2CB00CA03C9 /* PostSurveyFormDetailModel.swift */,
+			);
+			path = SurveyFormDetailsModel;
+			sourceTree = "<group>";
+		};
+		57307011270228BD00CA03C9 /* SurveyFormDetailsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57307013270228EA00CA03C9 /* SurveyFormDetailsViewModel.swift */,
+			);
+			path = SurveyFormDetailsViewModel;
+			sourceTree = "<group>";
+		};
+		5730701C2703174B00CA03C9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5730701D2703175E00CA03C9 /* CheckResponse.swift */,
+				5730701F2703177700CA03C9 /* Non-ArrayModel.swift */,
+				573070072700C30E00CA03C9 /* ResponseSuveyFormDetailModel.swift */,
+				57307021270320C500CA03C9 /* response.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		57417EFB274CCF7A00CD7CC6 /* Survey Logic */ = {
+			isa = PBXGroup;
+			children = (
+				57417EFC274CCF8900CD7CC6 /* SurveyLogic.swift */,
+			);
+			path = "Survey Logic";
+			sourceTree = "<group>";
+		};
+		5755C2F926E4E5FC00E8A6CD = {
+			isa = PBXGroup;
+			children = (
+				5755C30426E4E5FD00E8A6CD /* FynzoApp */,
+				5755C30326E4E5FD00E8A6CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5755C30326E4E5FD00E8A6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5755C30226E4E5FD00E8A6CD /* FynzoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5755C30426E4E5FD00E8A6CD /* FynzoApp */ = {
+			isa = PBXGroup;
+			children = (
+				57417EFB274CCF7A00CD7CC6 /* Survey Logic */,
+				575B46A72725538700CCDE31 /* Static Data */,
+				57AB4BD82717FC2A001D4AA8 /* DUmmy */,
+				57306FAB26FB31D500CA03C9 /* CoreData Files */,
+				57306FAA26FB318D00CA03C9 /* View Model */,
+				5723442526F198FE00161CDF /* CoreData Managers */,
+				572343D426E8640C00161CDF /* Networking */,
+				572343D126E7C2CB00161CDF /* Modifier */,
+				5755C31726E5E37900E8A6CD /* Model */,
+				5755C31526E5E36800E8A6CD /* View */,
+				5755C30526E4E5FD00E8A6CD /* FynzoAppApp.swift */,
+				5755C30726E4E5FD00E8A6CD /* ContentView.swift */,
+				5755C30926E4E5FE00E8A6CD /* Assets.xcassets */,
+				5755C30E26E4E5FE00E8A6CD /* Info.plist */,
+				5755C30B26E4E5FE00E8A6CD /* Preview Content */,
+			);
+			path = FynzoApp;
+			sourceTree = "<group>";
+		};
+		5755C30B26E4E5FE00E8A6CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5755C30C26E4E5FE00E8A6CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5755C31426E5E35E00E8A6CD /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				57306FE52700156100CA03C9 /* SurveyViews */,
+				57306FDD26FDE54B00CA03C9 /* AddSurveyView<<<>>> */,
+				57B6041026F33E0E00C6E115 /* Survey Views */,
+				5755C31826E5EBBC00E8A6CD /* Side Menu */,
+				572343F826E9631B00161CDF /* FirstView */,
+				572343E426E8EA4700161CDF /* Login Views */,
+				5755C32126E5FC5000E8A6CD /* HomeView.swift */,
+				572343C726E7353300161CDF /* FAQsView.swift */,
+				572343C926E7398500161CDF /* ContactUsView.swift */,
+				572343CB26E755CA00161CDF /* SettingsView.swift */,
+				572343CD26E755D400161CDF /* ChatView.swift */,
+				572343CF26E7A08500161CDF /* TemplatesView.swift */,
+				57B6040926F30B4900C6E115 /* introPageView.swift */,
+			);
+			path = "Main Views";
+			sourceTree = "<group>";
+		};
+		5755C31526E5E36800E8A6CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5755C31626E5E37200E8A6CD /* Base View */,
+				5755C31426E5E35E00E8A6CD /* Main Views */,
+				5730701527022E4A00CA03C9 /* DetailsForSurveyQuestions.swift */,
+				57453D072707551E00A8B176 /* DemoView.swift */,
+				5724403B270AEB1C0016872D /* OrientationView.swift */,
+				578A20D7274905200098B724 /* NextStep.swift */,
+				576A7542275370A500A9594C /* Demo02ViewModel.swift */,
+				576A754427537A6F00A9594C /* Demo02View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5755C31626E5E37200E8A6CD /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				572343EB26E8EBAC00161CDF /* LoginBaseView */,
+				5755C32326E6340F00E8A6CD /* FeedBackView.swift */,
+				5755C32526E6446F00E8A6CD /* BottomPartView.swift */,
+				5755C32726E686CF00E8A6CD /* AddButtonView.swift */,
+				57B6040726F22E4200C6E115 /* SettingRowView.swift */,
+			);
+			path = "Base View";
+			sourceTree = "<group>";
+		};
+		5755C31726E5E37900E8A6CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				573070042700C2AA00CA03C9 /* SurveyFormDetailsModel */,
+				57306FFC2700AACB00CA03C9 /* SurveyFormListingsModel */,
+				579054E826F48379008D03EA /* SignUPModel */,
+				5723440726EA2B4F00161CDF /* SocialLoginModel */,
+				572343FF26E9C73D00161CDF /* LoginModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5755C31826E5EBBC00E8A6CD /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5755C31C26E5EE5200E8A6CD /* BaseView */,
+				5755C31A26E5EE1D00E8A6CD /* MenuView.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		5755C31C26E5EE5200E8A6CD /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				5755C31D26E5EE8100E8A6CD /* UserDetailView.swift */,
+				5755C31F26E5EE9700E8A6CD /* OptionView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		575B46A72725538700CCDE31 /* Static Data */ = {
+			isa = PBXGroup;
+			children = (
+				575B46A8272553A200CCDE31 /* StaticData.swift */,
+			);
+			path = "Static Data";
+			sourceTree = "<group>";
+		};
+		579054E826F48379008D03EA /* SignUPModel */ = {
+			isa = PBXGroup;
+			children = (
+				579054E926F483A4008D03EA /* SignUpPostModel.swift */,
+				579054EB26F483BA008D03EA /* SignUPResponseModel.swift */,
+			);
+			path = SignUPModel;
+			sourceTree = "<group>";
+		};
+		57AB4BD82717FC2A001D4AA8 /* DUmmy */ = {
+			isa = PBXGroup;
+			children = (
+				57AB4BD92717FC3C001D4AA8 /* MyCode.swift */,
+			);
+			path = DUmmy;
+			sourceTree = "<group>";
+		};
+		57B6040B26F3219B00C6E115 /* SocialLoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57B6040C26F322FD00C6E115 /* SocialLoginViewModel.swift */,
+			);
+			path = SocialLoginViewModel;
+			sourceTree = "<group>";
+		};
+		57B6041026F33E0E00C6E115 /* Survey Views */ = {
+			isa = PBXGroup;
+			children = (
+				579054E326F38AAE008D03EA /* SurveyOptionView.swift */,
+			);
+			path = "Survey Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5755C30126E4E5FD00E8A6CD /* FynzoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5755C31126E4E5FE00E8A6CD /* Build configuration list for PBXNativeTarget "FynzoApp" */;
+			buildPhases = (
+				5755C2FE26E4E5FD00E8A6CD /* Sources */,
+				5755C2FF26E4E5FD00E8A6CD /* Frameworks */,
+				5755C30026E4E5FD00E8A6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FynzoApp;
+			packageProductDependencies = (
+			);
+			productName = FynzoApp;
+			productReference = 5755C30226E4E5FD00E8A6CD /* FynzoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5755C2FA26E4E5FC00E8A6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5755C30126E4E5FD00E8A6CD = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 5755C2FD26E4E5FC00E8A6CD /* Build configuration list for PBXProject "FynzoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5755C2F926E4E5FC00E8A6CD;
+			packageReferences = (
+				579054ED26F7FDB6008D03EA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 5755C30326E4E5FD00E8A6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5755C30126E4E5FD00E8A6CD /* FynzoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5755C30026E4E5FD00E8A6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5755C30D26E4E5FE00E8A6CD /* Preview Assets.xcassets in Resources */,
+				5755C30A26E4E5FE00E8A6CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5755C2FE26E4E5FD00E8A6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57417EFD274CCF8900CD7CC6 /* SurveyLogic.swift in Sources */,
+				57306FE9270015E200CA03C9 /* SmileyFaceView.swift in Sources */,
+				57306FAD26FB324400CA03C9 /* SurveyCDManager.swift in Sources */,
+				5723440B26EA2B8900161CDF /* SocialLoginPostModel.swift in Sources */,
+				576A7543275370A500A9594C /* Demo02ViewModel.swift in Sources */,
+				579054EC26F483BA008D03EA /* SignUPResponseModel.swift in Sources */,
+				572343D326E7C2F300161CDF /* LoginPreviewModifier.swift in Sources */,
+				5755C31E26E5EE8100E8A6CD /* UserDetailView.swift in Sources */,
+				572343F526E95D7A00161CDF /* DemoSurveyView.swift in Sources */,
+				57306FEB270027A200CA03C9 /* RatingView.swift in Sources */,
+				57306FF127002CDB00CA03C9 /* LongTextView.swift in Sources */,
+				572343EA26E8EB8900161CDF /* SignView.swift in Sources */,
+				57306FE426FDFE2500CA03C9 /* SurveyListModel.swift in Sources */,
+				57B6040826F22E4200C6E115 /* SettingRowView.swift in Sources */,
+				57307014270228EA00CA03C9 /* SurveyFormDetailsViewModel.swift in Sources */,
+				572343ED26E8EBC800161CDF /* EmailInputView.swift in Sources */,
+				5730701E2703175E00CA03C9 /* CheckResponse.swift in Sources */,
+				573070202703177700CA03C9 /* Non-ArrayModel.swift in Sources */,
+				57879F8A2704CFCD00D57DE2 /* DropDownView.swift in Sources */,
+				573070002700AB8800CA03C9 /* ResponseSurveyFormListing.swift in Sources */,
+				572F620D2708A576006C6FF5 /* TestingView.swift in Sources */,
+				573070032700BA1F00CA03C9 /* surveyFormListingViewModel.swift in Sources */,
+				5730701B2702CF9900CA03C9 /* SurveyFormDetailsCDManager.swift in Sources */,
+				575B46A9272553A200CCDE31 /* StaticData.swift in Sources */,
+				578A20D8274905200098B724 /* NextStep.swift in Sources */,
+				576A754527537A6F00A9594C /* Demo02View.swift in Sources */,
+				572343EF26E8EC8000161CDF /* InputPassView.swift in Sources */,
+				57306FA226FA44BB00CA03C9 /* SignUPViewModel.swift in Sources */,
+				572343FA26E9632B00161CDF /* FirstView.swift in Sources */,
+				57B6040A26F30B4900C6E115 /* introPageView.swift in Sources */,
+				5723440326E9C7F900161CDF /* LoginPostModel.swift in Sources */,
+				57306FF72700439000CA03C9 /* StateMentQuestionView.swift in Sources */,
+				5723440626E9CD6B00161CDF /* LoginviewModel.swift in Sources */,
+				572343D626E8642700161CDF /* GetData.swift in Sources */,
+				572343C826E7353300161CDF /* FAQsView.swift in Sources */,
+				57306FFB2700AAC400CA03C9 /* Get SurveyFormListings.swift in Sources */,
+				572343F126E8EDF200161CDF /* UserDetailsView.swift in Sources */,
+				57306FF52700411600CA03C9 /* StatementView.swift in Sources */,
+				572343F326E9592A00161CDF /* LoginView.swift in Sources */,
+				5755C30826E4E5FD00E8A6CD /* ContentView.swift in Sources */,
+				572343CA26E7398500161CDF /* ContactUsView.swift in Sources */,
+				573070082700C30E00CA03C9 /* ResponseSuveyFormDetailModel.swift in Sources */,
+				5755C31B26E5EE1D00E8A6CD /* MenuView.swift in Sources */,
+				5755C32226E5FC5000E8A6CD /* HomeView.swift in Sources */,
+				57306FDF26FDE56400CA03C9 /* <<addsurvey>>.swift in Sources */,
+				5723440926EA2B7300161CDF /* SocialLoginResponseModel.swift in Sources */,
+				57B6040D26F322FD00C6E115 /* SocialLoginViewModel.swift in Sources */,
+				572343CE26E755D400161CDF /* ChatView.swift in Sources */,
+				5723442A26F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodeld in Sources */,
+				57306FEF27002CAB00CA03C9 /* CheckBoxView.swift in Sources */,
+				57306FF327003FCF00CA03C9 /* CheckListView.swift in Sources */,
+				573070062700C2CB00CA03C9 /* PostSurveyFormDetailModel.swift in Sources */,
+				57306FE126FDE5EA00CA03C9 /* ADDsurveyLogic.swift in Sources */,
+				57453D082707551E00A8B176 /* DemoView.swift in Sources */,
+				57307022270320C500CA03C9 /* response.swift in Sources */,
+				57306FAF26FB439E00CA03C9 /* SurveyViewModel.swift in Sources */,
+				572343F726E95F8E00161CDF /* DemoBaseView.swift in Sources */,
+				5730701627022E4A00CA03C9 /* DetailsForSurveyQuestions.swift in Sources */,
+				5755C32026E5EE9700E8A6CD /* OptionView.swift in Sources */,
+				572343D026E7A08500161CDF /* TemplatesView.swift in Sources */,
+				579054EA26F483A4008D03EA /* SignUpPostModel.swift in Sources */,
+				579054E426F38AAE008D03EA /* SurveyOptionView.swift in Sources */,
+				5755C32426E6340F00E8A6CD /* FeedBackView.swift in Sources */,
+				57307010270226DA00CA03C9 /* Get SurveyFormDetails.swift in Sources */,
+				5730700D270189AE00CA03C9 /* SuveyFormListingCDManager.swift in Sources */,
+				57306FED27002A1600CA03C9 /* ScaleView.swift in Sources */,
+				5755C32626E6446F00E8A6CD /* BottomPartView.swift in Sources */,
+				5730700B270188D300CA03C9 /* CDSurveyFormListings.xcdatamodeld in Sources */,
+				5723440126E9C75100161CDF /* LoginResponseModel.swift in Sources */,
+				572343CC26E755CA00161CDF /* SettingsView.swift in Sources */,
+				57879FAD270574AD00D57DE2 /* RadioButtonView.swift in Sources */,
+				5755C32826E686CF00E8A6CD /* AddButtonView.swift in Sources */,
+				5755C30626E4E5FD00E8A6CD /* FynzoAppApp.swift in Sources */,
+				57306FFE2700AAEB00CA03C9 /* PostSurveyformListingModel.swift in Sources */,
+				5723442726F1990F00161CDF /* UserLoginDetailsCDManager.swift in Sources */,
+				57879FAB27054FEA00D57DE2 /* SurveyStatement.swift in Sources */,
+				57AB4BDA2717FC3C001D4AA8 /* MyCode.swift in Sources */,
+				5724403C270AEB1C0016872D /* OrientationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5755C30F26E4E5FE00E8A6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5755C31026E4E5FE00E8A6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5755C31226E4E5FE00E8A6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FynzoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NF89CMS79F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FynzoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Krishna.FynzoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5755C31326E4E5FE00E8A6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FynzoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NF89CMS79F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FynzoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Krishna.FynzoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5755C2FD26E4E5FC00E8A6CD /* Build configuration list for PBXProject "FynzoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5755C30F26E4E5FE00E8A6CD /* Debug */,
+				5755C31026E4E5FE00E8A6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5755C31126E4E5FE00E8A6CD /* Build configuration list for PBXNativeTarget "FynzoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5755C31226E4E5FE00E8A6CD /* Debug */,
+				5755C31326E4E5FE00E8A6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		579054ED26F7FDB6008D03EA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		5723442826F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5723442926F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodel */,
+			);
+			currentVersion = 5723442926F1E9D400161CDF /* CDUserLOGINDetails.xcdatamodel */;
+			path = CDUserLOGINDetails.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		57307009270188D300CA03C9 /* CDSurveyFormListings.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5730700A270188D300CA03C9 /* CDSurveyFormListings.xcdatamodel */,
+			);
+			currentVersion = 5730700A270188D300CA03C9 /* CDSurveyFormListings.xcdatamodel */;
+			path = CDSurveyFormListings.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5755C2FA26E4E5FC00E8A6CD /* Project object */;
+}

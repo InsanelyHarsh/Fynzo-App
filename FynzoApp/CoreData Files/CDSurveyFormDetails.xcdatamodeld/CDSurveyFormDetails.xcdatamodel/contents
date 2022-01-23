@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SurveyDetails" representedClassName="SurveyDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="choice" optional="YES" attributeType="String"/>
+        <attribute name="isNps" optional="YES" attributeType="String"/>
+        <attribute name="isTextBox" optional="YES" attributeType="String"/>
+        <attribute name="labels" optional="YES" attributeType="String"/>
+        <attribute name="questionText" optional="YES" attributeType="String"/>
+        <attribute name="scale" optional="YES" attributeType="String"/>
+        <attribute name="screen_num" optional="YES" attributeType="String"/>
+        <attribute name="shape" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="SurveyDetails" positionX="-36" positionY="9" width="128" height="14"/>
+    </elements>
+</model>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SuveyFormListingData" representedClassName="SuveyFormListingData" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numberofSuvey" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="owner_id" optional="YES" attributeType="String"/>
+        <attribute name="suveyid" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="SuveyFormListingData" positionX="-45" positionY="0" width="128" height="89"/>
+    </elements>
+</model>
